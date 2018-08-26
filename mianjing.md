@@ -1,0 +1,24 @@
+1. given a binary tree, there is one or zero node having two parents. write a method to check if the tree has such a node, return true/false. If there is such node, fix it by disconnect it from any one of its two parents.
+follow-up: 
+a. find out the level of this broken node.
+b. time complexity (N), space complexity (N)
+
+2. write 1-N on piece of papers, some numbers rotate 180 degrees and will become another number, such as 81 -> 18. We need to underscore to distinguish them. Return the least number of numbers that we need to mark with underscore.
+follow-up: time-complexity? 5^N
+
+3. given a rule of expression:
+expr := num | "(" + op + expr+ + ")" // expr+ means there can be 1 or more expr(s)
+op := "+" | "*"
+evaluate the expression.
+
+4. there is a list of airport three letter list such as {"BOS", "PKJ", "BNJ" ...} and a directed graph of the airport connections. Now given a path of sequences of airports such as "BPS"->"PKL"->"BOS", the airport names might be wrong and you need to fix them. You can change the airport name to any one on the airport list. What is the mininum number of letters you need to change to make the itinary valid? return the path.
+follow-up: how to test the code?
+
+5. 4kReader. You are provided an existing API which always read 4k data from source as:
+int read4k(char[] buffer, offset)
+int is how many chars are read into buffer. most of the cases would be 4k, but it will be a difference number if there is less than 4k chars left in the source. offset is the index of buffer from which you want to write to.
+
+design a wrapper class of read4k such that it will read any number of chars into a buffer and return you then number of readed chars.
+class FileReader {
+    int readN(char[] buffer, int n)
+}
